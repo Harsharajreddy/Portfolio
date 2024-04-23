@@ -1,0 +1,330 @@
+.home-body {
+background-image: url('https://wallpaperbat.com/img/930940-pixground.webp');
+background-size: cover;
+background-position: top;
+background-repeat: no-repeat;
+overflow-y: auto; 
+}
+.navbar {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.navbar li {
+    margin-right: 20px;
+}
+.navbar {
+position: fixed;
+top: 20px;
+right: 20px;
+z-index: 2;
+}
+.nav-link{
+text-decoration: none;
+color: white;
+}
+.nav-link:hover {
+color: #ffee10;
+text-shadow: 0 0 20px #ffee10;
+}
+.intro-text {
+font-size: 50px;
+text-align: center;
+color: #ffffff;
+margin-top: 150px;
+}   
+
+
+.navbar ul {
+list-style-type: none;
+padding: 0;
+}
+.navbar li {
+margin-right: 20px;
+display: inline; 
+font-size: 25px;
+text-decoration: none;
+color: #fff;
+}
+.animate-character {
+position: relative;
+top: -15px;
+text-transform: uppercase;
+background-image: linear-gradient(
+    -225deg,
+    #ffffff 0%,
+    #ffffff 29%,
+    #18edaa 67%,
+    #ffffff 100%    
+);
+background-size: auto auto;
+background-clip: border-box;
+background-size: 200% auto;
+color: #fff;
+background-clip: text;
+color: transparent;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+animation: textclip 2s linear infinite;
+display: inline-block;
+font-size: 50px;
+filter: blur(0.8px);
+}
+
+@keyframes textclip {
+to {
+    background-position: 200% center;
+}
+}
+
+/* Media Queries for Responsive Design */
+
+@media screen and (max-width: 768px) {
+.navbar {
+    top: 10px;
+    right: 10px;
+}
+
+.navbar li {
+    font-size: 16px;
+    margin-right: 15px;
+}
+
+.animate-character {
+    font-size: 25px;
+}
+}
+
+.about-body {
+    background: linear-gradient(to right, #f9f9f9, #0dbced, #df3838);
+    margin: 0;
+    padding: 0;
+}
+.about-div {
+    margin-left: 50px;
+    border-radius: 10px;
+    margin-right: 50px;
+    height: auto;
+    color: rgb(0, 0, 0);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.title-about {
+    text-align: center;
+    font-style: oblique;
+    font-size: 70px;
+    text-shadow: 3px 3px 5px rgb(0, 0, 0);
+}
+.text-about {
+    text-align: center;
+    text-decoration: solid;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.skills ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 60px;
+}
+.skills li {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: 1px solid #000;
+    padding: 30px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+.skills li:hover {
+    background: linear-gradient(to top, #000 0%, rgba(0, 0, 0, 0) 100%);
+    color: #fff; /* Change text color on hover, if needed */
+}
+
+.skills img {
+    width: 100px;
+    height: 100px;
+    margin-right: 15px;
+    margin-bottom: 5px;
+    vertical-align: middle;
+}
+.skills span {
+    display: block;
+    text-align: center;
+}
+.social-icons {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 60px;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons li {
+    list-style: none;
+    margin: 0 80px;
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.social-icons a:hover .icon {
+    color: #000000;
+    transform: rotateY(360deg);
+}
+
+.social-icons .icon {
+    transition: .5s;
+}
+
+
+.icons {
+    position: fixed;
+    bottom: 30px;
+    left: 0; /* Adjust this value if you want the icons to be centered horizontally */
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .icons li {
+    display: inline-block;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-right: 10px;
+  }
+  
+  .icons li a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .icons li a:hover .icon {
+    color: #007bff;
+    transform: scale(1.5);
+    
+  }
+  
+  .icons li a i {
+    color: white;
+    font-size: 30px;
+  }
+
+.contact-body {
+    background: linear-gradient(to right, #f9f9f9, #0dbced, #df3838);
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-form {
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-variant: small-caps;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-container label {
+    display: block;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-container textarea {
+    height: 120px;
+}
+
+.form-container button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-container button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+  .projects-container {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow projects to wrap to the next line if space is limited */
+    gap: 20px; /* Add spacing between projects */
+    padding-left: 30px;
+}
+
+.project {
+    flex: 1; /* Distribute space equally among projects */
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    max-width: 300px; /* Set maximum width for each project box */
+}
+
+.project h2 {
+    margin-top: 0;
+}
+
+.project p {
+    margin-bottom: 0;
+}
+.pro-title{
+    text-align: center;
+    font-style: italic;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.pro-title span{
+    position: relative;
+    display: inline-block;
+    font-size: 40px;
+    text-transform: uppercase;
+    animation: flip 3.2s infinite;
+    animation-delay: calc(.4s * var(--i));
+}
+@keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
+    }
+  }
